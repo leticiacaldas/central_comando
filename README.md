@@ -1,58 +1,70 @@
-## Agatha Scarton e Letícia Caldas
+<div align="center">
+    <h1>Central de Comando - Tartarugas Ninja 🐢</h1>
+    <img src="https://user-images.githubusercontent.com/placeholder/demo.gif" alt="Demonstração" width="500"/>
+</div>
 
-## Para Compilar:
+Projeto acadêmico para gerenciamento de missões, vilões, tartarugas e equipamentos, inspirado no universo das Tartarugas Ninja. Desenvolvido em C por Agatha Scarton e Letícia Caldas.
 
-1.  Navegar até o diretório raiz do projeto no seu terminal.
-2.  Execute o comando `make`:
+---
 
-    ```bash
-    make
-    ```
+## 🚀 Funcionalidades
 
-    Isso criará o diretório `bin` e o executável `central_comando` dentro dele. Ele também criará um diretório `data` para armazenar os arquivos de persistência.
+| Função                | Descrição                                                                 |
+|-----------------------|---------------------------------------------------------------------------|
+| Gerenciar Vilões      | Adicione, busque e liste vilões usando árvore binária de busca            |
+| Missões               | Painel de alertas com fila de prioridade (heap)                           |
+| Diário de Bordo       | Missões concluídas em ordem LIFO (pilha)                                  |
+| Equipamentos          | Lista encadeada para gerenciar arsenal                                    |
+| Simulação de Batalha  | Escolha tartarugas, equipamentos e execute batalhas                      |
+| Persistência          | Dados salvos em arquivos no diretório `data/`                             |
 
-## Como Executar
+---
 
-Após a compilação, execute o programa a partir do diretório raiz:
+## 🛠️ Como Compilar
+
+1. Navegue até o diretório raiz do projeto:
+     ```bash
+     cd central_comando
+     make
+     ```
+     O executável será gerado em `bin/central_comando`.
+
+## ▶️ Como Executar
 
 ```bash
 make run
 ```
 
-## Estruturas de Dados Utilizadas
-Lista Encadeada: Usada para gerenciar a lista de equipamentos.
+---
 
-Fila de Prioridade (Heap): Usada para o Painel de Alertas de Missões, garantindo que as missões de maior ameaça sejam sempre as primeiras.
+## 📚 Estruturas de Dados
+- **Lista Encadeada:** Equipamentos
+- **Fila de Prioridade (Heap):** Missões
+- **Pilha:** Diário de Bordo
+- **Árvore Binária de Busca:** Vilões
 
-Pilha: Implementada para o Diário de Bordo, exibindo as missões concluídas em ordem LIFO.
+---
 
-Árvore Binária de Busca : Utilizada para armazenar e buscar vilões de forma eficiente.
+## 💡 Exemplos de Uso
 
-## Exemplos de Uso
-1. Adicionar um Vilão:
+### 1. Adicionar um Vilão
+No menu principal, selecione "Arquivos de Vilões". Escolha adicionar novo vilão ou um pré-definido. Insira nome, nível de habilidade e ponto fraco.
 
-No menu principal, selecione "Arquivos de Vilões".
+### 2. Adicionar uma Missão
 
-Escolha a opção para adicionar um novo vilão ou escolha entre os vilões pre definidos.
+No menu principal, selecione "Painel de Alertas de Missões". Adicione nova missão ou escolha uma pré-definida. Insira descrição, local e nível de ameaça.
 
-Insira os dados do vilão (nome, nível de habilidade, ponto fraco).
+### 3. Realizar uma Batalha
+Selecione "Arsenal e Plano de Ação". Escolha missão pendente, tartarugas e até 2 equipamentos. Acompanhe o resultado e verifique o "Diário de Bordo".
 
-2. Adicionar uma Missão:
+---
 
-No menu principal, selecione "Painel de Alertas de Missões".
+## 👩‍💻 Contribuição
+Pull requests são bem-vindos! Para contribuir, faça um fork, crie uma branch e envie seu PR.
 
-Escolha a opção para adicionar uma nova missão ou escolha entre as missões pre definidas.
+## 📄 Licença
+Este projeto é apenas para fins acadêmicos.
 
-Insira a descrição, local e nível de ameaça. 
-
-Realizar uma Batalha:
-
-No menu principal, selecione "Arsenal e Plano de Ação".
-
-Selecione a missão pendente.
-
-Selecione as tartarugas disponíveis e até 2 equipamentos.
-
-A simulação será executada e o resultado exibido.
-
-Verifique o "Diário de Bordo" e o "Gerenciar Tartarugas" para ver as consequências.
+## 🙋‍♀️ Autores
+- Agatha Scarton
+- Letícia Caldas ([lbcaldas@inf.ufpel.edu.br](mailto:lbcaldas@inf.ufpel.edu.br))
